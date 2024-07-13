@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* Inline styles for demonstration */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image: url('images/background.png');
+            background-size: auto;
+            background-position: center;
+            color: #333;
+        }
+
+        nav {
+            background-color: rgba(75, 46, 46, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #da6797;
+        }
+
+        section {
+            padding: 80px 20px;
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            scroll-behavior: smooth; /* Smooth scrolling */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .home-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .home-content img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .home-content img:hover {
+            transform: scale(1.1);
+        }
+
+        .about-content, .skills-content, .contact-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 2px solid #4b2e2e;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content p, .skills-content .skill, .contact-content p {
+            margin: 10px 0;
+            color: #2e1c1c;
+        }
+
+        .skills-content .skill {
+            background-color: #a33788;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skills-content .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4b2e2e;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        strong {
+            color: #271818;
+        }
+
+        .active-link {
+            color: #da6797 !important; /* Highlight color for active link */
+        }
+
+        section:nth-child(even) {
+            background-image: url('path_to_your_image_even.jpg'); /* Replace with your actual image path */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        section:nth-child(odd) {
+            background-image: url('path_to_your_image_odd.jpg'); /* Replace with your actual image path */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to My Personal Website</h1>
+        <div class="home-content">
+            <img src="images/ira.jpg" alt="Ira Rain Joy H. Briones">
+            <p>Hello! My name is Ira Rain Joy H. Briones. Welcome to my personal website where you can learn more about me!</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="about-content book-style">
+            <p><strong>Name:</strong> Ira Rain Joy H. Briones</p>
+            <p><strong>Age:</strong> 20</p>
+            <p><strong>Birthday:</strong> June 26, 2004</p>
+            <p><strong>Status:</strong> Divorced</p>
+            <p><strong>Parent (Legal):</strong> Apple Sunshine Jonalyne Hufana</p>
+            <p><strong>Parents (Illegal):</strong> Joshua Villanueva and Sharmainr Pait</p>
+            <p><strong>Lives In:</strong> Baguio City</p>
+            <p><strong>Province:</strong> Pampanga</p>
+            <p><strong>Course:</strong> Nursing</p>
+            <p><strong>Dream Course:</strong> Veterinary</p>
+            <p><strong>Number of Children:</strong> 1</p>
+            <p><strong>Name of Child:</strong> Oreo</p>
+            <p><strong>Date of Birth:</strong> March 07, 2024</p>
+            <p><strong>Biggest Fear:</strong> Fear of the unknown</p>
+            <p><strong>Pet Peeve:</strong> Cancelling plans at the last minute</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1>My Skills</h1>
+        <div class="skills-content">
+            <div class="skill">
+                <p><strong>Dancing</strong></p>
+            </div>
+            <div class="skill">
+                <p><strong>Volleyball</strong></p>
+            </div>
+            <div class="skill">
+                <p><strong>Basketball</strong></p>
+            </div>
+            <div class="skill">
+                <p><strong>Badminton</strong></p>
+            </div>
+            <div class="skill">
+                <p><strong>Reading</strong></p>
+            </div>
+            <div class="skill">
+                <p><strong>Lumandi</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-content">
+            <a href="#">mygmail@gmail.com</a>
+            <p>+63987654321</p>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for smooth scrolling and active link highlighting
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+
+                    // Remove active class from all links
+                    navLinks.forEach(navLink => {
+                        navLink.classList.remove('active-link');
+                    });
+
+                    // Add active class to clicked link
+                    this.classList.add('active-link');
+                });
+            });
+
+            // Intersection Observer to highlight nav link on scroll
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    const navActiveLink = document.querySelector(`nav ul li a[href="#${id}"]`);
+
+                    if (entry.isIntersecting) {
+                        navActiveLink.classList.add('active-link');
+                    } else {
+                        navActiveLink.classList.remove('active-link');
+                    }
+                });
+            }, { threshold: 0.7 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
